@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        
+    <title>calculadora de IMC </title>
+
+
+
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="assests/image/ilustration.svg" alt="logo">
+        </section>
+        
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        peso em Kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        altura
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" required>
+                        <span>
+                            m
+                        </span>
+                    </div>
+                </div>
+               <button id="calculate">
+                Calcular
+               </button>
+            </form>
+                <div id="infos"class="hidden">
+                    <div id="results">
+                        <div id="bmi">
+                            <span id="value"></span>
+                            <span>Seu IMC</span>
+                         </div>
+                         <div id="description">
+                            <span></span>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div id="more_info" >
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwilqJemvIOGAxXoQEgAHa0XA00YABAAGgJjZQ&ase=2&gclid=CjwKCAjwi_exBhA8EiwA_kU1MsC8UdfWB_SjmUxx5ObWRtxFmITNy03RAK67Mp4Vlba01AgvrEjKvRoCPLwQAvD_BwE&ohost=www.google.com&cid=CAESVOD2E_HuvP2U7LYj_IHkLeyZBPy_O8SVOWbnVRBrqTTfGIZFtPr_sTXwIF_xvX3QRw9Q_3IUXeKTgVioUAeUGdsOEtUFdsZ990fpaC6JEiGlPKuDqw&sig=AOD64_1rABG1EJWeyaLoE2yAiaAvYhHifA&q&nis=4&adurl&ved=2ahUKEwjr0pGmvIOGAxW-ALkGHS6EBBkQ0Qx6BAgQEAE">mais informações sobre o IMC
+                       
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+        </section>
+    </main>
+
+<script src="assests/script.js"></script>
+
+</body>
+</html>
